@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7C0CA181989551B004B6392 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C0CA171989551B004B6392 /* Foundation.framework */; };
+		C7C0CA1D1989551B004B6392 /* G3JSON.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7C0CA1C1989551B004B6392 /* G3JSON.h */; };
+		C7C0CA1F1989551B004B6392 /* G3JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C0CA1E1989551B004B6392 /* G3JSON.m */; };
+		C7C0CA261989551B004B6392 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C0CA251989551B004B6392 /* XCTest.framework */; };
+		C7C0CA271989551B004B6392 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C0CA171989551B004B6392 /* Foundation.framework */; };
+		C7C0CA291989551B004B6392 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C0CA281989551B004B6392 /* UIKit.framework */; };
+		C7C0CA2C1989551B004B6392 /* libG3JSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C0CA141989551B004B6392 /* libG3JSON.a */; };
+		C7C0CA321989551B004B6392 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7C0CA301989551B004B6392 /* InfoPlist.strings */; };
+		C7C0CA341989551B004B6392 /* G3JSONTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C0CA331989551B004B6392 /* G3JSONTests.m */; };
+		C7C0CAAD19912DBF004B6392 /* G3JSONFromJson.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C0CAAC19912DBF004B6392 /* G3JSONFromJson.m */; };
+		C7C0CAB019912E10004B6392 /* G3JSONToJson.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C0CAAF19912E10004B6392 /* G3JSONToJson.m */; };
+		C7C0CAB319912E42004B6392 /* G3JSONPropertyInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C0CAB219912E42004B6392 /* G3JSONPropertyInfo.m */; };
+		C7C0CABA19912EF6004B6392 /* NSString+G3JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C0CAB919912EF6004B6392 /* NSString+G3JSON.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7C0CA2A1989551B004B6392 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7C0CA0C1989551B004B6392 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7C0CA131989551B004B6392;
+			remoteInfo = G3JSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C7C0CA121989551B004B6392 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				C7C0CA1D1989551B004B6392 /* G3JSON.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C7C0CA141989551B004B6392 /* libG3JSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libG3JSON.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7C0CA171989551B004B6392 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7C0CA1B1989551B004B6392 /* G3JSON-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "G3JSON-Prefix.pch"; sourceTree = "<group>"; };
+		C7C0CA1C1989551B004B6392 /* G3JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = G3JSON.h; sourceTree = "<group>"; };
+		C7C0CA1E1989551B004B6392 /* G3JSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = G3JSON.m; sourceTree = "<group>"; };
+		C7C0CA241989551B004B6392 /* G3JSONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = G3JSONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7C0CA251989551B004B6392 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C7C0CA281989551B004B6392 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C7C0CA2F1989551B004B6392 /* G3JSONTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "G3JSONTests-Info.plist"; sourceTree = "<group>"; };
+		C7C0CA311989551B004B6392 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7C0CA331989551B004B6392 /* G3JSONTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = G3JSONTests.m; sourceTree = "<group>"; };
+		C7C0CAAB19912DBF004B6392 /* G3JSONFromJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3JSONFromJson.h; sourceTree = "<group>"; };
+		C7C0CAAC19912DBF004B6392 /* G3JSONFromJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3JSONFromJson.m; sourceTree = "<group>"; };
+		C7C0CAAE19912E10004B6392 /* G3JSONToJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3JSONToJson.h; sourceTree = "<group>"; };
+		C7C0CAAF19912E10004B6392 /* G3JSONToJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3JSONToJson.m; sourceTree = "<group>"; };
+		C7C0CAB119912E42004B6392 /* G3JSONPropertyInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3JSONPropertyInfo.h; sourceTree = "<group>"; };
+		C7C0CAB219912E42004B6392 /* G3JSONPropertyInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3JSONPropertyInfo.m; sourceTree = "<group>"; };
+		C7C0CAB819912EF6004B6392 /* NSString+G3JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+G3JSON.h"; path = "Categories/NSString+G3JSON.h"; sourceTree = "<group>"; };
+		C7C0CAB919912EF6004B6392 /* NSString+G3JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+G3JSON.m"; path = "Categories/NSString+G3JSON.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7C0CA111989551B004B6392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7C0CA181989551B004B6392 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7C0CA211989551B004B6392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7C0CA261989551B004B6392 /* XCTest.framework in Frameworks */,
+				C7C0CA2C1989551B004B6392 /* libG3JSON.a in Frameworks */,
+				C7C0CA291989551B004B6392 /* UIKit.framework in Frameworks */,
+				C7C0CA271989551B004B6392 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7C0CA0B1989551B004B6392 = {
+			isa = PBXGroup;
+			children = (
+				C7C0CA191989551B004B6392 /* G3JSON */,
+				C7C0CA2D1989551B004B6392 /* G3JSONTests */,
+				C7C0CA161989551B004B6392 /* Frameworks */,
+				C7C0CA151989551B004B6392 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7C0CA151989551B004B6392 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7C0CA141989551B004B6392 /* libG3JSON.a */,
+				C7C0CA241989551B004B6392 /* G3JSONTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7C0CA161989551B004B6392 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7C0CA171989551B004B6392 /* Foundation.framework */,
+				C7C0CA251989551B004B6392 /* XCTest.framework */,
+				C7C0CA281989551B004B6392 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7C0CA191989551B004B6392 /* G3JSON */ = {
+			isa = PBXGroup;
+			children = (
+				C7C0CAB419912E7F004B6392 /* Categories */,
+				C7C0CA1C1989551B004B6392 /* G3JSON.h */,
+				C7C0CA1E1989551B004B6392 /* G3JSON.m */,
+				C7C0CAAB19912DBF004B6392 /* G3JSONFromJson.h */,
+				C7C0CAAC19912DBF004B6392 /* G3JSONFromJson.m */,
+				C7C0CAAE19912E10004B6392 /* G3JSONToJson.h */,
+				C7C0CAAF19912E10004B6392 /* G3JSONToJson.m */,
+				C7C0CAB119912E42004B6392 /* G3JSONPropertyInfo.h */,
+				C7C0CAB219912E42004B6392 /* G3JSONPropertyInfo.m */,
+				C7C0CA1A1989551B004B6392 /* Supporting Files */,
+			);
+			path = G3JSON;
+			sourceTree = "<group>";
+		};
+		C7C0CA1A1989551B004B6392 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7C0CA1B1989551B004B6392 /* G3JSON-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7C0CA2D1989551B004B6392 /* G3JSONTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7C0CA331989551B004B6392 /* G3JSONTests.m */,
+				C7C0CA2E1989551B004B6392 /* Supporting Files */,
+			);
+			path = G3JSONTests;
+			sourceTree = "<group>";
+		};
+		C7C0CA2E1989551B004B6392 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7C0CA2F1989551B004B6392 /* G3JSONTests-Info.plist */,
+				C7C0CA301989551B004B6392 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7C0CAB419912E7F004B6392 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C7C0CAB819912EF6004B6392 /* NSString+G3JSON.h */,
+				C7C0CAB919912EF6004B6392 /* NSString+G3JSON.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7C0CA131989551B004B6392 /* G3JSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7C0CA371989551B004B6392 /* Build configuration list for PBXNativeTarget "G3JSON" */;
+			buildPhases = (
+				C7C0CA101989551B004B6392 /* Sources */,
+				C7C0CA111989551B004B6392 /* Frameworks */,
+				C7C0CA121989551B004B6392 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = G3JSON;
+			productName = G3JSON;
+			productReference = C7C0CA141989551B004B6392 /* libG3JSON.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C7C0CA231989551B004B6392 /* G3JSONTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7C0CA3A1989551B004B6392 /* Build configuration list for PBXNativeTarget "G3JSONTests" */;
+			buildPhases = (
+				C7C0CA201989551B004B6392 /* Sources */,
+				C7C0CA211989551B004B6392 /* Frameworks */,
+				C7C0CA221989551B004B6392 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7C0CA2B1989551B004B6392 /* PBXTargetDependency */,
+			);
+			name = G3JSONTests;
+			productName = G3JSONTests;
+			productReference = C7C0CA241989551B004B6392 /* G3JSONTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7C0CA0C1989551B004B6392 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = kyohei_ito;
+			};
+			buildConfigurationList = C7C0CA0F1989551B004B6392 /* Build configuration list for PBXProject "G3JSON" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C7C0CA0B1989551B004B6392;
+			productRefGroup = C7C0CA151989551B004B6392 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7C0CA131989551B004B6392 /* G3JSON */,
+				C7C0CA231989551B004B6392 /* G3JSONTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7C0CA221989551B004B6392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7C0CA321989551B004B6392 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7C0CA101989551B004B6392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7C0CAB319912E42004B6392 /* G3JSONPropertyInfo.m in Sources */,
+				C7C0CA1F1989551B004B6392 /* G3JSON.m in Sources */,
+				C7C0CAB019912E10004B6392 /* G3JSONToJson.m in Sources */,
+				C7C0CABA19912EF6004B6392 /* NSString+G3JSON.m in Sources */,
+				C7C0CAAD19912DBF004B6392 /* G3JSONFromJson.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7C0CA201989551B004B6392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7C0CA341989551B004B6392 /* G3JSONTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7C0CA2B1989551B004B6392 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7C0CA131989551B004B6392 /* G3JSON */;
+			targetProxy = C7C0CA2A1989551B004B6392 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7C0CA301989551B004B6392 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7C0CA311989551B004B6392 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7C0CA351989551B004B6392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C7C0CA361989551B004B6392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7C0CA381989551B004B6392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/G3JSON.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "G3JSON/G3JSON-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C7C0CA391989551B004B6392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/G3JSON.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "G3JSON/G3JSON-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C7C0CA3B1989551B004B6392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "G3JSON/G3JSON-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "G3JSONTests/G3JSONTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C7C0CA3C1989551B004B6392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "G3JSON/G3JSON-Prefix.pch";
+				INFOPLIST_FILE = "G3JSONTests/G3JSONTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7C0CA0F1989551B004B6392 /* Build configuration list for PBXProject "G3JSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7C0CA351989551B004B6392 /* Debug */,
+				C7C0CA361989551B004B6392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7C0CA371989551B004B6392 /* Build configuration list for PBXNativeTarget "G3JSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7C0CA381989551B004B6392 /* Debug */,
+				C7C0CA391989551B004B6392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7C0CA3A1989551B004B6392 /* Build configuration list for PBXNativeTarget "G3JSONTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7C0CA3B1989551B004B6392 /* Debug */,
+				C7C0CA3C1989551B004B6392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7C0CA0C1989551B004B6392 /* Project object */;
+}
