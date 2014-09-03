@@ -6,6 +6,8 @@
 //  Copyright (c) 2014年 kyohei_ito. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 @interface G3JSONPropertyInfo : NSObject
 
 @property (nonatomic, copy) NSString *propertyName;

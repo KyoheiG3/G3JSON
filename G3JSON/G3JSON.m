@@ -13,9 +13,7 @@
 @implementation G3JSON
 
 + (NSString *)toJSON:(id)object {
-    G3JSONToJson *g3json = [[G3JSONToJson alloc] init];
-
-    NSDictionary *attrs = [g3json JSONWithAnyObject:object];
+    NSDictionary *attrs = [[self class] toJSONObject:object];
 
     NSError *error = nil;
     NSData *data = [NSJSONSerialization dataWithJSONObject:attrs options:0 error:&error];
@@ -25,6 +23,12 @@
     }
 
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+}
+
++ (NSDictionary *)toJSONObject:(id)object {
+    G3JSONToJson *g3json = [[G3JSONToJson alloc] init];
+
+    return [g3json JSONWithAnyObject:object];
 }
 
 + (id)fromJSON:(NSString *)jsonString toClass:(Class)clazz {
@@ -46,15 +50,19 @@
         NSLog(@"%@", error.localizedDescription);
     }
 
+    return [[self class] fromJSONObject:json toClass:clazz];
+}
+
++ (id)fromJSONObject:(id)jsonObject toClass:(Class)clazz {
     G3JSONFromJson *g3json = [[G3JSONFromJson alloc] init];
 
-    if ([json isKindOfClass:NSDictionary.class]) {
-        return [g3json objectWithJSONObject:json toClass:clazz];
-    } else if ([json isKindOfClass:NSArray.class]) {
+    if ([jsonObject isKindOfClass:NSDictionary.class]) {
+        return [g3json objectWithJSONObject:jsonObject toClass:clazz];
+    } else if ([jsonObject isKindOfClass:NSArray.class]) {
         NSMutableArray *objects = [NSMutableArray array];
 
-        for (id object in json) {
-            [objects addObject:[json objectWithJSONObject:object toClass:clazz]];
+        for (id object in jsonObject) {
+            [objects addObject:[jsonObject objectWithJSONObject:object toClass:clazz]];
         }
 
         return objects.copy;

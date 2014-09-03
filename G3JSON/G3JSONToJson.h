@@ -6,6 +6,8 @@
 //  Copyright (c) 2014年 kyohei_ito. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 @interface G3JSONToJson : NSObject
 
 - (NSObject *)objectToValue:(id)object;
