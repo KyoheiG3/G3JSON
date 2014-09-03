@@ -62,7 +62,7 @@
         NSMutableArray *objects = [NSMutableArray array];
 
         for (id object in jsonObject) {
-            [objects addObject:[jsonObject objectWithJSONObject:object toClass:clazz]];
+            [objects addObject:[g3json objectWithJSONObject:object toClass:clazz]];
         }
 
         return objects.copy;
