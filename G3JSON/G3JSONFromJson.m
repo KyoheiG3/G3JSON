@@ -20,7 +20,7 @@
             continue;
         }
 
-        id value = object[info.propertyName];
+        id value = object[dicKey];
 
         // TODO: generate class object into array.
         if ([info.attributeClass isSubclassOfClass:NSArray.class]) {
